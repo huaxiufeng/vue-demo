@@ -4,7 +4,8 @@
     <h5 class="text-muted">简单 / 易用 / 便捷</h5>
     <!-- v-on后面接的是事件的名称，也就是emit的第一个参数 -->
     <translate-form v-on:textSubmit="translateText"></translate-form>
-    <translate-output v-text="translatedText"></translate-output>
+    <!-- v-bind后面接的是子组件的属性名称 -->
+    <translate-output v-bind:result="translatedText"></translate-output>
   </div>
 </template>
 

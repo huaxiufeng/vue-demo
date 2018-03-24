@@ -1,6 +1,6 @@
 <template>
   <div id="translate-output">
-    <h2>{{translatedText}}</h2>
+    <h2>{{result}}</h2>
   </div>
 </template>
 
@@ -8,9 +8,12 @@
 
 export default {
   name: 'translate-output',
-  props: [
-    'translatedText'
-  ]
+  props: {
+    result: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 
